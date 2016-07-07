@@ -80,9 +80,8 @@ daysOfTheWeek.insert("Sunday", atIndex: 0)
 /*: question8
  ### 8. Loop through the 'daysofTheWeek' array and change each value to lower case.
  */
-for var day in daysOfTheWeek {
-    day = day.lowercaseString
-   print (day)
+for (index, day) in daysOfTheWeek.enumerate() {
+    daysOfTheWeek[index] = day.lowercaseString
 }
 /*: question9
  ### 9. Check to see if the size of the array is greater than 5, i.e. contains the days of the weekend. If so, remove the days of the weekend from the array.
